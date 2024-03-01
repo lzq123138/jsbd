@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp --branchpatch=sdcomp-29491-629360
+"hal_485\startup_stm32l431xx.o"
+"hal_485\main.o"
+"hal_485\stm32l4xx_it.o"
+"hal_485\stm32l4xx_hal_msp.o"
+"hal_485\stm32l4xx_hal_tim.o"
+"hal_485\stm32l4xx_hal_tim_ex.o"
+"hal_485\stm32l4xx_hal_uart.o"
+"hal_485\stm32l4xx_hal_uart_ex.o"
+"hal_485\stm32l4xx_hal.o"
+"hal_485\stm32l4xx_hal_rcc.o"
+"hal_485\stm32l4xx_hal_rcc_ex.o"
+"hal_485\stm32l4xx_hal_flash.o"
+"hal_485\stm32l4xx_hal_flash_ex.o"
+"hal_485\stm32l4xx_hal_flash_ramfunc.o"
+"hal_485\stm32l4xx_hal_gpio.o"
+"hal_485\stm32l4xx_hal_dma.o"
+"hal_485\stm32l4xx_hal_dma_ex.o"
+"hal_485\stm32l4xx_hal_pwr.o"
+"hal_485\stm32l4xx_hal_pwr_ex.o"
+"hal_485\stm32l4xx_hal_cortex.o"
+"hal_485\stm32l4xx_hal_exti.o"
+"hal_485\system_stm32l4xx.o"
+--strict --scatter "hal_485\hal_485.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "hal_485.map" -o hal_485\hal_485.axf
